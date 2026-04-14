@@ -39,8 +39,8 @@ database:
 
 ## Использование (CLI)
 
-Запуск утилиты осуществляется через `main.py`.
-Синтаксис: `python main.py [ПРОВАЙДЕР] [КОМАНДА] [АРГУМЕНТ]`
+Запуск утилиты осуществляется через `src/main.py`.
+Синтаксис: `python src/main.py [ПРОВАЙДЕР] [КОМАНДА] [АРГУМЕНТ]`
 
 ### Выбор провайдера
 *   `-y` или `--yandex` : Работа с Яндекс.Диском
@@ -57,19 +57,19 @@ database:
 **Яндекс.Диск:**
 ```bash
 # Получить список файлов
-python main.py -y -l
+python src/main.py -y -l
 
 # Загрузить локальный файл на диск
-python main.py --yandex -p my_document.txt
+python src/main.py --yandex -p my_document.txt
 
 # Загрузить папку с файлами
-python main.py -y -pc ./my_folder
+python src/main.py -y -pc ./my_folder
 ```
 
 **Dropbox:**
 ```bash
 # Скачать файл с Dropbox
-python main.py -d -g remote_image.jpg
+python src/main.py -d -g remote_image.jpg
 ```
 
 ## Использование в коде (API)

@@ -1,0 +1,10 @@
+database:
+  access_token_for_dropbox:
+  app_key_dropbox:
+  app_secret_dropbox:
+  limit_files_for_listing:
+  path_for_download_from_yandex_disc: disk:/
+  path_for_files_yandex: disk:/
+  refresh_token_for_dropbox_disk:
+  token_for_yandex_disk:
+  local_path_for_dropbox:

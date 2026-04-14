@@ -1,11 +1,7 @@
 import yaml
 import os
 
-
-full_path = os.getcwd()
-full_path = full_path.split("/")[:-1]
-full_path = "/".join(full_path)
-
+full_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 with open(f"{full_path}/configuration.yaml", "r") as ymlfile:
     cfg = yaml.safe_load(ymlfile)
